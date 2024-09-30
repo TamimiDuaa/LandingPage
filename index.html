@@ -1,0 +1,220 @@
+<html>
+	<head>
+		<title>Main Page</title>
+		<LINK href="styles.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div id="head">
+			<div class="logo">
+				<img src="images/jeep.png" alt="Logo">
+
+				
+			</div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#vahicle">Vehicles</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="login">
+                <span onclick="logpopup()" id="logi">Login / Sign Up</span>
+
+            </div>
+            <div class="signin">
+                <span class="cancel" onclick="cancel()">X</span>
+                <div class="log-reg">
+                    <button type="button" class="toggle-btn" onclick="logVisiple()">Log in</button>
+                    <button type="button" class="toggle-btn"  onclick="regVisiple()">Register</button>
+                </div>
+                <div class="log">
+                    
+                    <form action="login.php" method="post" class="form">
+                     
+                       
+                        <div class="formInput">
+                            <label for="email">
+                                email 
+                            </label>
+                            <input type="email" id="email" name="email" class="Input" />
+                        </div>
+                        <div class="formInput">   
+                            <label for="pass">
+                               password
+                            </label>
+                            <input type="password" id="pass" name="pass" class="Input"/>
+                        </div>
+                       
+                        <input type="submit" value="Login" id="login-submit">
+                       
+                    </form>
+                   
+                </div>
+                <div class="register hide">
+                    
+                    <form action="signup.php" method="post" class="form">
+                        
+                       
+                        <div class="formInput">
+                            <label for="email">
+                                email 
+                            </label>
+                            <input type="email" id="email" name="email" class="Input" />
+                        </div>
+                        <div class="formInput">   
+                            <label for="pass">
+                               password
+                            </label>
+                            <input type="password" id="pass" name="pass" class="Input"/>
+                        </div>
+                        <div class="formInput">   
+                            <label for="pass">
+                               confirm password
+                            </label>
+                            <input type="password" id="pass" name="pass" class="Input"/>
+                        </div>
+                       
+                        <input type="submit" value="Register" id="login-submit">
+                       
+                    </form>
+                   
+                </div>
+            </div>
+           
+		</div>
+		<div id="home">
+            <h1>Find Your Car</h1>
+            <img src="images/car2.png" id="mainCars">
+
+        </div>
+        <div class="search">
+            <h2>Explore Cars</h2>
+            <form>
+                <select>
+                    <option value="">Car Model</option>
+                    <option value="Volvo">Volvo</option>
+                    <option value="Saab">Saab</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Jeeb">Jeeb</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Range Rover">Range Rover</option>
+
+                </select>
+                <input type="number" min="2010" max="2023" placeholder="year">
+                <input type="number" min="100" max="10000" placeholder="price">
+
+               <input type="submit" value="Explore" class="sub">
+            </form>
+        </div>
+        <div id="about">
+            <div class="aboutText">
+                <h1>Best Customer Service</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quidem, numquam repellat libero nisi laborum, sapiente quae magni, suscipit tenetur magnam fugit cupiditate vero minima labore. Autem quia quo modi!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quidem, numquam repellat libero nisi laborum.</p>
+            </div>
+            <img class="aboutImage" src="images/car3.png" alt="car">
+                
+           
+            </div>
+		<div id="vahicle">
+            <h2>Our Vahicles</h2>
+            <div class="cars">
+                <div class="car">
+                    <div class="carImage"><img src="images/car1.png" alt="" /></div>
+                    
+                    <div class="carText">
+                        <span class="model">Marcedes</span>
+                        <span class="year">2013</span>
+                        <span class="price">100$</span>
+                 </div>
+                    
+                    <button>Details</button>
+                </div>
+                <div class="car">
+                    <div class="carImage"><img src="images/car3.png" alt="" /></div>
+
+                    <div class="carText">  
+                        <span class="model">Honda</span>
+                        <span class="year">2018</span>
+                        <span class="price">200$</span>
+                    </div>
+                  
+                    <button>Details</button>
+                </div>
+                <div class="car">
+                    <div class="carImage"><img src="images/car4.png" alt="" /></div>
+
+                    <div class="carText"> 
+                        <span class="model">Audi</span>
+                        <span class="year">2015</span>
+                        <span class="price">150$</span>
+                    </div>
+                    
+                    <button>Details</button>
+                </div>
+                <div class="car">
+                    <div class="carImage"><img src="images/car3.png" alt="" /></div>
+
+                    <div class="carText"> 
+                        <span class="model">Honda</span>
+                    <span class="year">2018</span>
+                    <span class="price">200$</span>
+                    </div>
+                    
+                    <button>Details</button>
+                </div>
+                <div class="car">
+                    <div class="carImage"><img src="images/car4.png" alt="" /></div>
+
+                    <div class="carText">
+                        <span class="model">Audi</span>
+                        <span class="year">2015</span>
+                        <span class="price">150$</span>
+                     </div>
+                    
+                    <button>Details</button>
+                </div>
+                <div class="car">
+                    <div class="carImage"><img src="images/car1.png" alt="" /></div>
+
+                    <div class="carText"> 
+                        <span class="model">Marcedes</span>
+                        <span class="year">2013</span>
+                        <span class="price">100$</span>
+                    </div>
+                    
+                    <button>Details</button>
+                </div>
+
+
+            </div>
+            <button class="more">More Cars</button>
+
+        </div>
+		<div id="contact">
+                <h1>Contact Us</h1>
+                <div id="contactUs">
+                <div class="map"></div>
+                <div class="contactForm">
+                    <h2>Get in Touch</h2>
+                    <form>
+                        <input type="text" placeholder="your name">
+                        <input type="email" placeholder="your email">
+                        <input type="text" placeholder="subject">
+                        <textarea></textarea>
+                        <input type="submit" value="Send Massege">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+
+
+        </footer>
+
+        <script type="text/javascript" src="app.js"></script>
+	
+	</body>
+</html>

@@ -1,0 +1,116 @@
+<html>
+	<head>
+		<title>Cars</title>
+		<LINK href="styles.css" rel="stylesheet" type="text/css">
+	</head>
+    <body>
+        <div id="head">
+			<div class="logo">
+				<img src="images/jeep.png" alt="Logo">
+
+				
+			</div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#vahicle">Vehicles</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="login">
+                <span onclick="logpopup()" id="logi">Login / Sign Up</span>
+
+            </div>
+            <div class="signin">
+                <span class="cancel" onclick="cancel()">X</span>
+                <div class="log-reg">
+                    <button type="button" class="toggle-btn" onclick="logVisiple()">Log in</button>
+                    <button type="button" class="toggle-btn"  onclick="regVisiple()">Register</button>
+                </div>
+                <div class="log">
+                    
+                    <form action="login.php" method="post" class="form">
+                     
+                       
+                        <div class="formInput">
+                            <label for="email">
+                                email 
+                            </label>
+                            <input type="email" id="email" name="email" class="Input" />
+                        </div>
+                        <div class="formInput">   
+                            <label for="pass">
+                               password
+                            </label>
+                            <input type="password" id="pass" name="pass" class="Input"/>
+                        </div>
+                       
+                        <input type="submit" value="Login" id="login-submit">
+                       
+                    </form>
+                   
+                </div>
+                <div class="register hide">
+                    
+                    <form action="signup.php" method="post" class="form">
+                        
+                       
+                        <div class="formInput">
+                            <label for="email">
+                                email 
+                            </label>
+                            <input type="email" id="email" name="email" class="Input" />
+                        </div>
+                        <div class="formInput">   
+                            <label for="pass">
+                               password
+                            </label>
+                            <input type="password" id="pass" name="pass" class="Input"/>
+                        </div>
+                        <div class="formInput">   
+                            <label for="pass">
+                               confirm password
+                            </label>
+                            <input type="password" id="pass" name="pass" class="Input"/>
+                        </div>
+                       
+                        <input type="submit" value="Register" id="login-submit">
+                       
+                    </form>
+                   
+                </div>
+            </div>
+           
+		</div>
+        <div class="explore">
+            <div class="search2">
+                <input type="text" placeholder="search here..." class="searc">
+
+            </div>
+            <div class="filter">
+                <form>
+                    <select>
+                        <option value="">Car Model</option>
+                        <option value="Volvo">Volvo</option>
+                        <option value="Saab">Saab</option>
+                        <option value="Honda">Honda</option>
+                        <option value="Jeeb">Jeeb</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Toyota">Toyota</option>
+                        <option value="Range Rover">Range Rover</option>
+    
+                    </select>
+                    <input type="number" min="2010" max="2023" placeholder="year">
+                    <input type="number" min="100" max="10000" placeholder="price">
+                    
+               <input type="submit" value="Explore" class="sub">
+                </form>
+            </div>
+            <div class="result">
+                
+            </div>
+        </div>
+        <script type="text/javascript" src="app.js"></script>
+    </body>
+</html>

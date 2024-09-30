@@ -1,0 +1,473 @@
+*{
+    --blue: #70d9e3;
+    --white:#f6f6f6;
+    --light-blue:rgb(90, 140, 142);
+    --yellow:#fdb140;
+    --black:#2f2f2f;
+    --pink:#f8caca;
+    --darkpink: #d19292;
+}
+
+body{
+    padding:0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-color:cadetblue;
+
+}
+.logo img{
+    height: 10vh;
+}
+.menu{
+    width: 70%;
+}
+.menu ul{
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    list-style: none;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+.menu ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#home{
+    height: 85vh;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mainCars{
+    width:60%;
+    height: 50%;
+}
+.search{
+    width:70vw;
+    height: 35vh;
+    z-index: 1;
+    position: absolute;
+    top:80vh;
+    left:15vw;
+    background-color: #d19292;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.search h2{
+    padding-top: 2rem;
+}
+.search form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 1rem;
+}
+.search select, input[type="number"]{
+    text-align: center;
+    width: 10rem;
+    height: 2rem;
+    border: 1px solid black;
+    border-radius: 12px;
+
+}
+.search input[type="submit"]{
+    text-align: center;
+    width: 10rem;
+    height: 2rem;
+    border-radius: 12px;
+    background-color: var(--light-blue);
+    border: none;
+    cursor: pointer;
+}
+.search input[type="submit"]:hover{
+    background-color: rgb(56, 108, 110);
+}
+#about{
+    height: 65vh;
+    background-color: var(--pink);
+    padding: 3rem;
+    padding-top:12rem;
+    display: flex;
+    flex-direction: row;
+}
+.aboutImage{
+   height: 60%;
+   width: 50%;
+}
+.aboutText{
+    width:35%;
+    height: 100%;
+    padding-left: 10rem;
+    padding-right: 5rem;
+}
+
+#contact{
+    height: 80vh;
+    background-color: #ece3de;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+#contactUs{
+    display: flex;
+    flex-direction: row;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 2rem;
+}
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    margin-bottom: 3rem;
+    border: 1px solid black;
+    padding: 1rem;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.589);
+}
+.contactForm input{
+    width: 100%;
+    height: 2rem;
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+}
+.contactForm textarea{
+    width: 100%;
+    height: 4rem;
+    margin-top: 0.5rem;
+
+}
+.contactForm input[type="submit"]{
+    width:50%;
+    height:2rem;
+    margin-top: 1rem;
+    
+    border-radius: 12px;
+    background-color:  cadetblue;
+    border: none;
+}
+.contactForm input[type="submit"]:hover{
+    cursor: pointer;
+    background-color:  rgb(75, 135, 137);
+
+}
+.map{
+    width:80%;
+    height: 80%;
+    background-color: cadetblue;
+    margin-right: 2rem;
+    border: 1px solid black;
+
+    padding:1rem;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.589);
+
+}
+footer{
+    height: 20vh;
+    background-color: var(--black);
+}
+#vahicle{
+    height: 140vh;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.cars{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding:1rem 10rem;
+    margin: 2rem;
+    margin-left: 0;
+}
+.car{
+    max-width:90%;
+    max-height: 90%;
+    border: 1px solid black;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 1rem;
+    text-align: left;
+}
+.carText{
+    display: flex;
+    flex-direction: column;
+
+}
+.carText span{
+    margin-left: 0.7rem;
+   
+    padding: 0.5rem 1rem;
+    
+    max-width: fit-content;
+    border-radius: 12px;
+}
+.price{
+    border-radius: 12px;
+    padding: 0.3rem 0.6rem;
+}
+.model{
+    text-align: center;
+    font-weight: 700;
+    color: darkcyan;
+    align-self: center;
+}
+.car button{
+    width: 70%;
+    height: 2rem;
+    border-radius: 12px;
+    background-color: darkcyan;
+    align-self: center;
+    border: 1px solid rgb(2, 105, 105);
+    color: #f6f6f6;
+}
+.car button:hover{
+   
+    background-color: rgb(2, 105, 105);
+   cursor: pointer;
+}
+.carImage{
+    width:100%;
+    height:40%;
+}
+.car img{
+    max-width:9rem;
+    max-height:8rem;
+    padding-left: 1rem;
+}
+.car:hover{
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.523);
+}
+.more{
+    width:20%;
+    height:4em;
+    border-radius:10px ;
+    border: none;
+    background-color: var(--darkpink);
+    color: var(--white);
+}
+.more:hover{
+    background-color: #ab7474;
+    cursor: pointer;
+
+}
+#logi:hover{
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+.signin{
+    background-color: rgba(255, 255, 255, 0.703);
+    width:100vw;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 2;
+    visibility: hidden;
+
+}
+.signin hr{
+    width:18em;
+   
+    border:none;
+    border-top: 1px solid black;
+    margin-top: 0.5rem;
+}
+
+.log{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cancel{
+    position: fixed;
+    top:17.5vh;
+    left:62vw;
+    font-size: 1rem;
+    background-color: #f6f6f6;
+    width:1rem;
+    height:1.2rem;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.cancel:hover{
+    cursor: pointer;
+   
+}
+.form{
+    margin: auto;
+    margin-top: 15vh;
+    padding: auto;
+    width: 20em;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    overflow: hidden;
+    background-color: azure;
+    border:2px solid black;
+}
+#user{
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    overflow: hidden;
+}
+.formInput{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: left;
+    
+}
+
+#login-submit{
+    width: 66.6%;
+    padding: auto;
+    margin-top: 1em;
+    background-color: cadetblue;
+    border: none;
+    height:2em;
+    box-shadow: 0.3rem 0.3rem 5px rgb(156, 179, 180);
+    border-radius: 5px;
+    transition-duration: 0.4s;
+}
+.Input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom:0.5px solid black;
+    height: 1rem;
+    background-color:inherit;
+    transition:  margin-top 0.4s ease;
+    overflow-x: hidden;
+    text-align: left;
+    font-size: 1rem;
+}
+.formInput label{
+    margin-top: 1em;
+    font-size: 1rem;
+    transition:  font-size 0.4s ease;
+}
+
+.Input:focus{
+    margin-top: 0.3rem;
+    border: none;
+    height: 1.5rem;
+    outline: none;
+    border-bottom: 0.5px solid cadetblue;
+}
+.Input:focus +label{
+    font-size: 12px;
+    color:cadetblue;
+}
+
+#login-submit:hover{
+    background-color:rgb(35, 77, 78);
+    color: white;
+}
+
+.popup{
+    visibility: visible;
+    
+}
+
+.reg{
+    text-decoration: none;
+    color: cadetblue;
+}
+.reg:hover{
+    text-decoration:underline;
+}
+.log-reg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width:20%;
+    height: 5%;
+    border-radius: 15px;
+    box-shadow: 2px 2px rgb(84, 83, 83);
+    text-align: center;
+    background-color: white;
+    position: relative;
+    top:28vh;
+    left:40vw;
+}
+.toggle-btn{
+    width:50%;
+    border: none;
+    height: 100%;
+    background-color: white;
+    cursor: pointer;
+
+}
+.toggle-btn:first-child{
+    border-right: none;
+    border-radius: 15px 0 0 15px;
+}
+.toggle-btn:last-child{
+    border-left: none;
+    border-radius: 0 15px 15px 0;
+
+}
+.toggle-btn:focus{
+    background: linear-gradient(90deg, cadetblue,rgb(182, 216, 217));
+    border-radius: 15px;
+}
+
+
+
+.hide{
+    display: none;
+}
+.explore{
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
